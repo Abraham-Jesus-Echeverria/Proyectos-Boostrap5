@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <link rel="stylesheet" href="./css/bootstrap-v5.1.min.css">
+    <link rel="stylesheet" href="./css/styles.css">
+    <title>Cotizador phoneShop</title>
+</head>
+<body class="body-color">  
+    <header class="bg-white p-3 border">
+      <h1 class="h5">Cotizador</h1>
+    </header> 
+    <!-- container del form -->
+    <section class=" d-flex justify-content-center py-5 "> 
+        <div class="container bg-white px-sm-5 px-2 border">
+            <!-- imagen phoneShop -->
+            <div class="row"> 
+                <div class="col-12 d-flex justify-content-center mb-4 py-4"> 
+                    <img class="img-fluid" src="./assets/images/logo-phoneShop.jpg" alt="logotipo phoneShop">
+                </div>
+            </div>
+            <!-- menu de progreso -->
+            <div class="row px-lg-5 px-2 "> 
+                <div class="col-12 px-0 mb-4 pb-4 border-2 border-bottom  d-flex justify-content-center"> 
+                    <!-- paso 1 -->
+                    <div class="d-flex flex-column align-items-center text-center progress-container-item me-sm-3 me-1"> 
+                        <div class="rounded-circle circle bg-success d-flex justify-content-center align-items-center text-light"> 1 </div> 
+                        <p>selecciona tu equipo</p>
+                    </div> 
+                    <!-- separador -->
+                    <div class="d-sm-block d-none bg-secondary align-self-center progress-container-item border border-secondary"></div>
+                    <!-- paso 2 -->
+                    <div class="d-flex flex-column align-items-center text-center progress-container-item mx-sm-3 mx-1"> 
+                        <div class="rounded-circle circle bg-success d-flex justify-content-center align-items-center text-light"> 2 </div> 
+                        <p>Datos personales</p>
+                    </div>
+                    <!-- separador -->
+                    <div class="d-sm-block d-none bg-secondary align-self-center progress-container-item border border-secondary"></div>
+                    <!-- paso-3 -->
+                    <div class="d-flex flex-column align-items-center text-center progress-container-item mx-sm-3 mx-1"> 
+                        <div class="rounded-circle circle bg-success d-flex justify-content-center align-items-center text-light"> 3 </div> 
+                        <p>Evaluacion</p>
+                    </div>
+                    <!-- separador -->
+                    <div class="d-sm-block d-none bg-secondary align-self-center progress-container-item border border-secondary"></div>
+                    <!-- paso 4 --> 
+                    <div class="d-flex flex-column align-items-center text-center progress-container-item ms-sm-3 ms-1"> 
+                        <div class="rounded-circle circle bg-success d-flex justify-content-center align-items-center text-light"> 4 </div> 
+                        <p>Resultado</p>
+                    </div>
+                </div>  
+                
+              
+                
+            </div>
+            <!-- formulario -->
+            <form class="row">  
+                <!-- seccion izquierda -->
+                <div class="col-md-6 col-12 px-lg-5 px-sm-2">
+                    <div class="form-group mb-4"> 
+                        <label for="modelo" class="form-label mb-2">Modelo</label> 
+                        <select name="modelo" id="modelo" class="form-control inputs-height"> 
+                            <option value="Iphone-11">iphone 11</option>
+                            <option value="Iphone-11-pro">iphone 11 pro</option>
+                            <option value="Iphone-12">iphone 12</option>
+                            <option value="Iphone-12-pro-max">iphone 12 pro max</option>
+                            <option value="Iphone-13">iphone-13</option>
+                        </select>
+                    </div> 
+                    <div class="form-group mb-4"> 
+                        <label for="capacidad" class="form-label mb-2">Capacidad de almacenamiento</label> 
+                        <select name="capacidad" id="capacidad" class="form-control inputs-height"> 
+                            <option value="64gb">64gb</option>
+                            <option value="128gb">128gb</option>
+                            <option value="224gb">224gb</option>
+                        </select>
+                    </div> 
+                    <div class="form-group mb-4"> 
+                        <label for="color" class="form-label mb-2">Color</label> 
+                        <div class="d-flex align-items-end" id="color"> 
+                            <button class="rounded-circle circle bg-danger border-0 me-2" ></button>
+                            <button class="rounded-circle circle bg-danger border-0 me-2" ></button>
+                            <button class="rounded-circle circle bg-danger border-0 me-2" ></button>
+                            <button class="rounded-circle circle bg-danger border-0" ></button>
+                        </div>
+                    </div> 
+                    
+                </div> 
+                <!-- seccion derecha -->
+                <div class="col-md-6 col-12 px-lg-5 px-sm-2"> 
+                    <div class="form-group mb-4"> 
+                        <label for="meses" class="form-label mb-2">Meses</label> 
+                        <select name="meses" id="meses" class="form-control inputs-height"> 
+                            <option value="11-meses">11 Meses</option>
+                            <option value="12-meses">12 Meses</option>
+                            <option value="24-meses">24 meses</option>
+                        </select>
+                    </div>  
+                    <div class="form-group mb-5"> 
+                        <label for="capacidad" class="form-label mb-2">Fecha de corte</label> 
+                        <select name="capacidad" id="capacidad" class="form-control inputs-height"> 
+                            <option value="1-3">del 1 al 3</option>
+                            <option value="5-8">del 5 al 8</option>
+                            <option value="10-15">del 10 al 15</option>
+                        </select>
+                    </div>    
+                    <div class="form-group w-75 mb-4"> 
+                        <button class="btn-lg border-0 btn-secondary text-light w-75 inputs-height">continuar</button>
+                      </div> 
+                </div> 
+
+              
+            </form>
+        </div>
+
+    </section>
+
+
+
+    
+
+    <script src="./js/bootstrap-v5.1.min.js"></script>
+</body>
+</html>
