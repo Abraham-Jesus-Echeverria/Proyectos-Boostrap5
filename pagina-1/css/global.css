@@ -1,0 +1,23 @@
+*{ 
+    margin: 0 !important;
+    padding: 0 !important; 
+}
+
+.fondo{ 
+    background: url(../assets/images/fondo.jpg) center;  
+    background-size: cover; 
+}
+
+.left{ 
+    left: 0;
+}  
+
+@media screen and (max-width: 576px ) { 
+    .w-xs-50{ 
+        width: 50% !important;
+    }
+    
+}
+
+
+
